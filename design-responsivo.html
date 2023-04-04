@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Responsivo</title>
+
+    <style>
+         {
+            box-sizing: border-box;
+        }*
+
+        /* 1ºEtapa regras de definção do site, idependente da tela
+     */
+
+        body {
+            background-color: beige;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        h1 {
+            font-size: 40px;
+            color: rgb(7, 48, 172);
+
+        }
+
+        b {
+            color: red;
+            background-color: white;
+            padding: 2px;
+            border-radius: 4px;
+        }
+
+        hr {
+            border: none;
+            height: 5px;
+            background-color: darkblue;
+
+        }
+
+        @media screen and (min-width:534px) {
+            p {
+                font-size: 22px;
+            }
+
+            hr {
+                height: 3px;
+                background-color: brown;
+            }
+        }
+
+        @media screen and (min-width: 611px) {
+            h1 {
+                text-align: center;
+            }
+
+            b {
+                font-style: italic;
+            }
+
+        }
+
+        @media screen and (min-width: 768px) {
+            body {
+                background: linear-gradient(0deg, rgb(80, 75, 175) 0%, rgb(45, 45, 172) 35%, rgba(0, 212, 255, 1) 100%);
+                background-size: cover;
+                background-attachment: fixed;
+            }
+
+            h1 {
+                font-size: 50px;
+                text-transform: uppercase;
+                color: red;
+                background: blue;
+            }
+
+            p {
+                font-size: 25px;
+                text-align: right;
+                line-height: 32px;
+            }
+
+            b {
+                text-shadow: 2px 2px 1px;
+                border: 1px solid red;
+            }
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="exemplo">
+        <h1>Design Responsivo (ou responsividade)</h1>
+        <hr>
+        <p>Conjunto de técnicas de desenvolvimento front-end visando a construção de sites que funcionem corretamente em
+            dispositivos com telas de tamanhos variados.</p>
+
+        <p>Existem 2 abordagens de desenvolvimento: <b>Mobile First</b> e <b>Desktop First</b>.</p>
+
+        <p>A mais utilizada é a <b>Mobile First</b>.</p>
+    </div>
+</body>
+
+</html>
